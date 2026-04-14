@@ -1,0 +1,9 @@
+services:
+  nginx:
+    build: .
+    privileged: true
+    restart: always
+    volumes:
+    - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    ports:
+      - "7000:80"
