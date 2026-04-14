@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Instalando pacotes
-apt update && apt install -y htop mtr iputils-ping bash-completion curl wget iproute2 net-tools nano vim build-essential traceroute
+apt update && apt install -y systemd systemd-sysv htop mtr iputils-ping bash-completion curl wget iproute2 net-tools nano vim build-essential traceroute
 
 # Ajustes de Sistema (Opcional se não houver overrides antigos)
 rm -f /etc/systemd/system/docker.service.d/override.conf
