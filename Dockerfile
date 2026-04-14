@@ -1,4 +1,4 @@
 FROM ubuntu:24.04
 COPY . .
-RUN chmod +x install_nginx.sh && ./install_nginx.sh
+RUN apt update && apt install nginx -y
 CMD ["/usr/sbin/init"]
